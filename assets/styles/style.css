@@ -448,6 +448,15 @@ GRIDS
 	background-size: contain;
  	z-index: 0;
 }
+.square-img-bkgd-cover {
+	position:absolute;
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+ 	z-index: 0;
+}
 .square-text-content {
 	padding: 1em;
 	position: relative;

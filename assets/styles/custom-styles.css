@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Mono);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,800);
+
 body, html {
 	font-size:16px;
 	letter-spacing: .05em;
@@ -66,6 +69,13 @@ CUSTOM STYLES
 .karla-font {
 	font-family: 'Karla', sans-serif;
 }
+.PTmono-font {
+	font-family: 'PT Mono', monospace;
+}
+.raleway-font {
+	font-family: 'Raleway', sans-serif;
+}
+
 /*** Menu & Footer ***/
 .logo-item {
 	position: fixed;
@@ -82,7 +92,7 @@ CUSTOM STYLES
 	background: white;
 	padding: .5em .5em 1.5em 3.5em;
 }
-.side-menu {
+.menu-right-wrapper {
 	-webkit-justify-content: flex-end;
 	justify-content: flex-end;
 }
@@ -274,7 +284,7 @@ CUSTOM STYLES
 .footer-logo {
 	width: 100%;
 	height:6em;
-	background: url(../images/generales/pac-logo.svg) top left no-repeat;
+	background: url(../images/generales/logo.svg) top left no-repeat;
 	background-size: contain;
 	padding-bottom: 1em;
 }
@@ -334,9 +344,15 @@ CUSTOM STYLES
     font-weight: 500;
     overflow: hidden;
 }
-.banner-main {
-	background: url(../images/gallery/image-0.png) center no-repeat;
+.banner-main .full-img {
+	background: url(http://i.imgur.com/ZMrzu.jpg) center no-repeat;
 	background-size: cover;
+	box-sizing: border-box;
+    padding: 3em 0em;
+}
+.banner-main.patern-img {
+	background: url(../images/gallery/ignasi_pattern_s.png) center repeat;
+	/*background-size: cover;*/
 	box-sizing: border-box;
     padding: 3em 0em;
 }
@@ -345,10 +361,17 @@ CUSTOM STYLES
 }
 .banner-secondary {
 	height: 30vh;
-	background: grey;
+	background-color: grey;
 	color: white;
 	padding: 0 2em;
     box-sizing: border-box;
+}
+.banner-secondary.full-img {
+	background: url(http://i.imgur.com/ZMrzu.jpg) center no-repeat;
+	background-size: cover;
+}
+.banner-secondary.patern-img {
+	background: url(../images/gallery/confectionary.png) center repeat;
 }
 
 /*** SLICK SLIDER ***/
@@ -409,31 +432,31 @@ CUSTOM STYLES
 /*Develop tests*/
 
 .sample-image {
-	background-image: url(../images/gallery/image-5.jpg);
+	background-image: url(https://ia600805.us.archive.org/28/items/mma_armchair_9861/9861.jpg);
 }
 .sample-image-0 {
-	background-image: url(../images/gallery/img-mock-00.png);
+	background-image: url(../images/gallery/image-1.jpg);
 }
 .sample-image-1 {
-	background-image: url(../images/gallery/img-mock-01.png);
+	background-image: url(../images/gallery/image-1.jpg);
 }
 .sample-image-2 {
-	background-image: url(../images/gallery/img-mock-02.png);
+	background-image: url(../images/gallery/image-1.jpg);
 }
 .sample-image-3 {
-	background-image: url(../images/gallery/img-mock-03.png);
+	background-image: url(../images/gallery/image-1.jpg);
 }
 .sample-image-4 {
-	background-image: url(../images/gallery/img-mock-04.png);
+	background-image: url(../images/gallery/image-1.jpg);
 }
 .sample-image-5 {
-	background-image: url(../images/gallery/img-mock-05.png);
+	background-image: url(../images/gallery/image-1.jpg);
 }
 .sample-image-6 {
-	background-image: url(../images/gallery/img-mock-06.png);
+	background-image: url(../images/gallery/image-1.jpg);
 }
 .sample-image-7 {
-	background-image: url(../images/gallery/img-mock-07.png);
+	background-image: url(../images/gallery/image-1.jpg);
 }
 /****************************
 MEDIA QUERIES
@@ -492,7 +515,7 @@ MEDIA QUERIES
 	.filter-menu {
 		display: none;
 	}
-	.side-menu {
+	.menu-right-wrapper {
 	    -webkit-justify-content: initial;
 	    justify-content: initial;
 	}
@@ -553,7 +576,7 @@ MEDIA QUERIES
 		width: 100%;
 		text-align: center;
 	}
-	.side-menu {
+	.menu-right-wrapper {
 		-webkit-align-items: center;
 		align-items: center;
 	}

@@ -5,7 +5,7 @@
 	<title>Document</title>
 	<link rel="shortcut icon" href="assets/images/generales/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="assets/styles/style.css" type="text/css"/>
-	<link rel="stylesheet" type="text/css" href="assets/styles/pac-styles.css" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="assets/styles/custom-styles.css" type="text/css"/>
 	<link rel="stylesheet" type="text/css" href="assets/styles/slick.css" type="text/css"/>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -13,11 +13,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.min.js"></script>
 	<script  src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
-	
+
+    <!-- <link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'> -->
 	<link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700' rel='stylesheet' type='text/css'>
 </head>
-<body class="karla-font">
+<body class="raleway-font">
 	
 	<div class="main-wrapper">
 		<!-- LOGO -->
@@ -26,8 +27,8 @@
 		</div>
 		
 		<!-- BANNER -->
-		<div class="banner-main flex flex_justify-center flex_align-center side-padding-2">
-			<div>SIT_AC / Ed.XIII, 23-25 de abrill, 2016</div>
+		<div class="banner-main patern-img flex flex_justify-center flex_align-center side-padding-2">
+			<div>armazón básico</div>
 		</div>
 
 		<!-- MENUS -->
@@ -41,14 +42,14 @@
 						<div class="main-menu-section-wrapper">
 							<div class="flex mobile-column-wrap">
 								<div class="menu-item">
-									<a href="" class="menu-btn padding-quarter"><h1>acerca</h1></a>
+									<a href="" class="menu-btn padding-quarter"><h1>Un ítem</h1></a>
 								</div>
 								<div class="menu-item">
-									<a href="" id="" class="menu-btn padding-quarter"><h1>involúcrate</h1></a>
+									<a href="" id="" class="menu-btn padding-quarter"><h1>Otro item</h1></a>
 									<div class="child-menu">
 										<div class="flex mobile-column-wrap up-down-padding-half">
 											<div class="sub-menu-item">
-												<a href="" class="sub-menu-btn padding-quarter"><h1>sitac</h1></a>
+												<a href="" class="sub-menu-btn padding-quarter"><h1>bla bla</h1></a>
 												<div class="sub-child-menu">
 													<div class="flex mobile-column-wrapf">
 														<div class="max-w-30e source-serif-font padding-half border-box">
@@ -82,7 +83,7 @@
 												</div>
 											</div>
 											<div class="sub-menu-item">
-												<a href="" class="sub-menu-btn padding-quarter"><h1>apoyos</h1></a>
+												<a href="" class="sub-menu-btn padding-quarter"><h1>Uno más</h1></a>
 												<div class="sub-child-menu">
 													<div class="flex mobile-column-wrapf">
 														<div class="max-w-30e source-serif-font">
@@ -124,7 +125,7 @@
 									</div>
 								</div>
 								<div class="menu-item">
-									<a href="" id="" class="menu-btn padding-quarter"><h1>programas</h1></a>
+									<a href="" id="" class="menu-btn padding-quarter"><h1>uno más</h1></a>
 									<div class="child-menu">
 										<div class="flex mobile-column-wrap up-down-padding-half">
 											<div class="sub-menu-item">
@@ -206,7 +207,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="side-menu flex column-trigger-1040">
+					<div class="menu-right-wrapper flex column-trigger-1040">
 						<!-- Search form -->
 						<div class="menu-search-item flex">
 
@@ -237,41 +238,45 @@
 		<!-- CONTENT -->
 		<div class="content-box-1400 pac-content-padding">
 			<div class="content-box-1200">
+				<section>
+					<h1>Retícula</h1>
+					<h2>Ésta es una sección en un contenedor de 1200px</h2>
+					<p>Cualquier elemento tipo <code> &lt;section&gt;</code> tendrá un espaciado general predefinido de 1em</p>
+				</section>
 				<section class="grid flex justify-center-trigger-1040 flex_wrap top-padding-3 right-padding-half">
 					<div class="square-25">
 						<div class="square-content">
-							<a href="basico.html">
-								<div class="square-img-bkgd-contain sample-image-1"></div>
-								<div class="square-text-hidden trans-600">
-									<div class="full-content bkgd-white padding-1 border-box">
-										<h3>Este link va al templete <a href="basico.html">basico.html (acerca/involúcrate)</a></h3>
+							<div class="square-img-bkgd-cover sample-image"></div>
+							<div class="square-text-hidden trans-600">
+								<div class="full-content bkgd-white padding-1 border-box">
+									<a href="basico.html">
+										<h3>Éste link va al templete basico.html</h3>
 										<p class="category-label">categoría</p>
-										<p></p>
-									</div>
+									</a>
 								</div>
-							</a>
+							</div>
 					    </div>
 					</div>
 					<div class="square-25">
-						<a href="apoyos-publicaciones.html">
-							<div class="square-content">
-								<div class="square-img-bkgd-contain"></div>
-								<div class="square-text-content">
-									<div class="bottom-padding-1">
-										<h2>Noticia destacada (sólo texto)</h2>
-										<p class="category-label">categoría</p>
-										<p>Abril, 2016</p>
-									</div>
-									<p>"El lío de la teorización del arte contemporáneo"</p>
-									<p>Este link va al templete <a href="apoyos-publicaciones.html">apoyos-publicaciones.html</a></p>
+						<div class="square-content">
+							<div class="square-img-bkgd-cover"></div>
+							<div class="square-text-content">
+								<div class="bottom-padding-1">
+									<h2>Noticia destacada (sólo texto)</h2>
+									<p class="category-label">categoría</p>
+									<p>Abril, 2016</p>
 								</div>
-						    </div>
-						</a>
+								<p>"El lío de la teorización del arte contemporáneo"</p>
+								<a href="apoyos-publicaciones.html">
+									<p>Este link va al templete apoyos-publicaciones.html</p>
+								</a>
+							</div>
+					    </div>
 					</div>
 					<div class="square-25">
 						<a href="">
 							<div class="square-content">
-								<div class="square-img-bkgd-contain sample-image-2"></div>
+								<div class="square-img-bkgd-cover sample-image-2"></div>
 								<div class="square-text-hidden trans-600">
 									<div class="full-content bkgd-white padding-1 border-box">
 										<h3>Esto es un título</h3>
@@ -285,7 +290,7 @@
 					<div class="square-25">
 						<a href="">
 							<div class="square-content">
-								<div class="square-img-bkgd-contain sample-image-3"></div>
+								<div class="square-img-bkgd-cover sample-image-3"></div>
 								<div class="square-text-hidden trans-600">
 									<div class="full-content bkgd-white padding-1 border-box">
 										<h3>Esto es un título</h3>
@@ -299,7 +304,7 @@
 					<div class="square-25">
 						<a href="">
 							<div class="square-content">
-								<div class="square-img-bkgd-contain sample-image-4"></div>
+								<div class="square-img-bkgd-cover sample-image-4"></div>
 								<div class="square-text-hidden trans-600">
 									<div class="full-content bkgd-white padding-1 border-box">
 										<h3>Esto es un título</h3>
@@ -313,7 +318,7 @@
 					<div class="square-25">
 						<a href="">
 							<div class="square-content">
-								<div class="square-img-bkgd-contain sample-image-5"></div>
+								<div class="square-img-bkgd-cover sample-image-5"></div>
 								<div class="square-text-hidden trans-600">
 									<div class="full-content bkgd-white padding-1 border-box">
 										<h3>Esto es un título</h3>
@@ -327,7 +332,7 @@
 					<div class="square-25">
 						<a href="">
 							<div class="square-content">
-								<div class="square-img-bkgd-contain sample-image-6"></div>
+								<div class="square-img-bkgd-cover sample-image-6"></div>
 								<div class="square-text-hidden trans-600">
 									<div class="full-content bkgd-white padding-1 border-box">
 										<h3>Esto es un título</h3>
@@ -345,7 +350,7 @@
 		</div>
 
 		<!-- SECONDARY BANNER -->
-		<div class="banner-secondary flex flex_justify-center flex_align-center bottom-margin-1">
+		<div class="banner-secondary full-img flex flex_justify-center flex_align-center bottom-margin-1">
 			<div class="upper">noticia destacada</div>
 		</div>
 		
