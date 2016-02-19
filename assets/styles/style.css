@@ -5,7 +5,30 @@ RESETS
 	margin:0;
 	padding: 0;
 }
-a { color: inherit; cursor: pointer;}
+body, html {
+	font-size:16px;
+}
+h1 {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+h2 {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+h3 {
+	font-size: .9em;
+	font-weight: normal;
+}
+a { color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+}
+a:hover, a.active { color: lightseagreen; }
+
+ul, li {
+	list-style: none;
+}
 .no-focus:focus { outline: none; }
 .clear { clear: both; }
 /****************************
@@ -13,23 +36,21 @@ HEADER & FOOTER
 ****************************/
 
 /*** Menu ***/
-.menu-wrapper {
-	position: relative;
-	z-index: 99;
-}
-.menu {
-    width: 100%;
-    z-index: 1;
-}
 .logo-item  {
-    background: url(../images/generales/logo.svg) center no-repeat;
-	background-size: contain;
-	min-width: 2em;
-}
-.logo-item {
 	display: flex;
     align-items: center;
     justify-content: center;
+    background: url(../images/generales/logo.svg) center no-repeat;
+	background-size: contain;
+	z-index: 9;
+	width: 2em;
+	min-width: 2em;
+	height: 2em;
+	/*margin-top: .5em;*/	
+}
+.logo-item > a {
+	display: inline-block;
+	width: 100%;
 }
 .mobile-menu-btn {
     display: none;
@@ -39,9 +60,72 @@ HEADER & FOOTER
     box-shadow: inset 0px 5px 0px 0px black, inset 0px 10px 0px 0px white, inset 0px 15px 0px 0px black, inset 0px 20px 0px 0px white;
     z-index: 99;
 }
-.logo-item > a {
+.menu-btn {
+	cursor: pointer;
+}
+.menu-wrapper {
+	position: relative;
+	z-index: 99;
+}
+.menu {
+    width: 100%;
+    z-index: 1;
+}
+.menu-container {
+	position: relative;
+	box-sizing: border-box;
+}
+.main-menu-section {
+	background-color: white;
+}
+.main-menu .menu-item:not(:last-child),
+.sub-menu-item:not(:last-child) {
+	margin-right: 1em;
+}
+.main-menu .menu-btn {
+	border: 2px solid;
+}
+.main-menu .active .menu-btn,
+.main-menu .menu-btn.active,
+.main-menu .menu-btn:hover {
+	border: 2px solid;
+	background: black;
+	color: white;
+	border-color: black;
+} 
+.sub-menu-btn:hover,
+.sub-menu-btn.active,
+.secondary-options .menu-item:hover {
+	color: blue;
+}
+.menu-item a,
+.menu-search-item { 
+	text-transform: capitalize;
+	font-weight: 600;
+}
+.menu-item a,
+.footer-item a {
 	display: inline-block;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+.menu-wrapper {
 	width: 100%;
+	z-index:2;
+	background: white;
+}
+.search-form {
+	position: relative;
+	z-index: 1;
+}
+.show-search-btn,
+.show-search-btn:before,
+.show-search-btn:after {
+	width: 2em;
+	height: 2em;
+}
+.show-search-btn p {
+	text-indent: -999ex;
 }
 
 /*** Footer ***/
@@ -513,7 +597,7 @@ TRANSITIONS
 INPUTS & FORMS
 ****************************/
 input[type=text] {
-	border:1px solid; 
+	border:2px solid; 
 	-webkit-border-radius: 0;
     border-radius: 0;
 }
@@ -523,11 +607,12 @@ input[type=text]:focus {
 	outline-color:lightgrey;
 }
 input[type=submit] {
-	background:#ccc;
+	background:black;
+	color: white;
 	border:0 none;
     cursor:pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
 }
 input[type= email],
 input[type= password]  {
