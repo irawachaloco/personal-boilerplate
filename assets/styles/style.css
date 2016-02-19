@@ -31,6 +31,21 @@ ul, li {
 }
 .no-focus:focus { outline: none; }
 .clear { clear: both; }
+
+/*
+==========================================================
+	LAYOUT
+==========================================================
+*/
+
+/****************************
+DEFAULTS
+****************************/
+p ~ p { padding-top: 1em; }
+p:empty, span:empty { display: none; }
+section { margin-right: .5em; margin-left: .5em; }
+section:first-child { margin-top: 3em; }
+
 /****************************
 HEADER & FOOTER
 ****************************/
@@ -44,9 +59,8 @@ HEADER & FOOTER
 	background-size: contain;
 	z-index: 9;
 	width: 2em;
-	min-width: 2em;
 	height: 2em;
-	/*margin-top: .5em;*/	
+	margin: .5em;
 }
 .logo-item > a {
 	display: inline-block;
@@ -78,7 +92,7 @@ HEADER & FOOTER
 .main-menu-section {
 	background-color: white;
 }
-.main-menu .menu-item:not(:last-child),
+.menu-item:not(:last-child),
 .sub-menu-item:not(:last-child) {
 	margin-right: 1em;
 }
@@ -128,6 +142,12 @@ HEADER & FOOTER
 	text-indent: -999ex;
 }
 
+.menu-left-wrapper {
+	margin-left: 3.5em;
+}
+.fixed-menu {
+	z-index: 2;
+}
 /*** Footer ***/
 .footer-to-bottom {
 	position: absolute;
@@ -273,9 +293,6 @@ FLOATS
 /****************************
 TEXTS
 ****************************/
-.p-spacing p ~ p { padding-top: 1.5em; }
-p ~ p { padding-top: 1em; }
-p:empty, span:empty { display: none; }
 .text-right { text-align: right; }
 
 /*** Font ***/
@@ -300,6 +317,11 @@ BOXES
 .content-box-1024{ max-width: 1024px; margin: auto; }
 .content-box-1200 { max-width: 1200px; margin: auto; }
 .content-box-1400 { max-width: 1400px; margin: auto; }
+
+.max-w-960 { max-width: 960px; }
+.max-w-1024{ max-width: 1024px; }
+.max-w-1200 { max-width: 1200px; }
+.max-w-1400 { max-width: 1400px; }
 
 /*** Borders ***/
 .border-all { border: 1px solid; }
