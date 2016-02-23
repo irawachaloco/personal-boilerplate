@@ -100,11 +100,11 @@ function initScrollMagic() {
 	var controller = new ScrollMagic.Controller();
 	// Fix-menu Handler
 	var fixMenu = new ScrollMagic.Scene({
-		triggerElement: ".menu-wrapper", 
+		triggerElement: ".fixed-menu", 
 		triggerHook: 0,
 		reverse: true 
 	})
-	.setPin(".menu-wrapper")
+	.setPin(".fixed-menu")
 	.addTo(controller)
 
 	if ($( window ).width() >= 1040) {
